@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>List</h1>
+<ul *ngFor="let imageWord of imagesWords;">
+    <li (click)="onClick(imageWord)">
+        <div>
+            {{ imageWord }}
+        </div>
+    </li>
+</ul>
+
+<div>
+    <img src="{{'http://localhost:3000/images/'+image}}" alt="abc news special" *ngFor="let image of imageist;" />
+</div>

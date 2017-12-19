@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Search Image and Store to the Database</h1>
+<div>
+    <label>
+      <input [(ngModel)]="searchword" placeholder="search">
+    </label>
+    <button type="button" (click)="searchAndStoreImages($event)" [disabled]="!searchword">Submit</button>
+</div>
